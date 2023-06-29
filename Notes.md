@@ -50,3 +50,44 @@ Infor M3 CE nor hosted by Infor.
 - Openness to support needs
 ### 2. Describe each unique M3 CE MT customer environment.
 Each unique customer environment is known as a tenant. Each tenant gets a unique and isolated segment of the solution – all hosted in the Infor M3 multi-tenant cloud on AWS. Tenants cohabit and share the application server resources but cannot “see” each other. Databases are separate for manageability purposes.
+## Exercise 2.1: Log in to Infor OS and launch Infor M3 and set user preferences
+### Start an Infor M3 program from an open program
+1. Press **CTRL+R**. The Search and Start dialog box opens.
+2. Type  **Item. Open (MMS001)** in the Search and Start field.
+3. what this program basically does is it has the info about the items and their details which we deal with the client.
+4. Here we can create, delete or edit the item.
+
+<img width="692" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/7978398e-5a66-4999-ab1b-c1301f268686">
+
+## Exercise 2.2: Create a new menu on the Infor OS homepage
+### Create a new menu version
+1. Press **CTRL+R**. Type **Menu Version. Open (MNS080)**.
+2. Type **[your assigned 009Tnn user ID]** in the Menu vsn filter field.
+3. Click **Options > Create**. Panel E displays.
+4. Type **[nn_your initials]** menu in the Name field where nn matches the last two digits in your assigned 009Tnn user ID.
+5. Click the **Next** button. Panel B displays again and your newly created menu version displays in 
+the list.
+ ### Create a new function filter
+ 1. Press **CTRL+R**. Type **Function. Open (MNS110)**.
+ 2. Type *MNU* in the Function filter field.
+ 3. Press **Enter**. Search results display.
+ 4. Click to highlight the row with the description of **-M3 Standard**.
+ 5. Click **Options > Copy**. Panel C displays.
+ 6. Type **[your assigned 009Tnn user ID]** in the **Menu version** field.
+ 7. Click the **Next** button until *panel B1* displays again.
+ 8. Click to highlight the row associated with **[your assigned 009Tnn user ID]**.
+ 9. Click **Related > Menu**. The *Menu. Open (MNS111)* program opens. *Panel B1* displays.
+ 10. Click to highlight the row associated with **MNS095 Company. Open**.
+ 11. Click **Options > Delete**. The message, **“Confirm deletion of menu option 10”** displays in the bottom-left
+     corner of the panel.
+ 12.  <img width="690" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/fdaf493d-8eaa-4b3b-9011-caef7b78f7e3">
+ 13. Click the **Next** button. Panel B1 displays again.
+ 14. Type *35* in the Opt filter field.
+ 15. Type *MNS405* in the Function filter field. Note: This is the Roles. Open program.
+ 16. Click **Options > Create**. Panel E displays.
+ 17. Click the **Next** button. Panel B1 displays.
+ 18. Clear the Opt field.
+ 19. Clear the Function field.
+ 20. Click **Actions > Refresh**. All options display again.
+<img width="690" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/57beaf72-9df7-4fcb-af12-b78616d9ff62">
+
