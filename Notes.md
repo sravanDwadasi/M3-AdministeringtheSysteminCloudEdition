@@ -101,22 +101,23 @@ the list.
  6. Type [SRADWA49] in the Menu version field.
  7. Click the Next button. Panel B1 displays again.
  8. Click the Close (X) button to close the User. Open (MNS150) program. The Infor M3 Training
-    homepage displays. Note: Even though you have changed the menu display, you must log out 
+    homepage displays.
+ 9. Note: Even though you have changed the menu display, you must log out 
     and sign back in to Infor OS to see the changes.
- 9. Complete the following to log out:
-    a. Click the User Menu icon. A list displays.
-    b. Click the Sign out list item. The message, “Sign-out Successful” displays.
-    c. Click Close (X) to close the internet browser tab. The Training desktop displays.
- 10. Follow the steps in Exercise 2.1 Part 1 to log back in to Infor OS. The Infor M3 Training
+ 10. Complete the following to log out: <br>
+    a. Click the User Menu icon. A list displays. <br>
+    b. Click the Sign out list item. The message, “Sign-out Successful” displays. <br>
+    c. Click Close (X) to close the internet browser tab. The Training desktop displays. <br>
+ 11. Follow the steps in Exercise 2.1 Part 1 to log back in to Infor OS. The Infor M3 Training
      homepage displays.
- 11. Review the displayed M3 Menu. It matches the sequence indicated in step 20 of part 2.
- 12. <img width="222" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/080c39e8-b7ed-43ce-bfb9-160a3b0a8013">
+ 12. Review the displayed M3 Menu. It matches the sequence indicated in step 20 of part 2.
+ 13. <img width="222" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/080c39e8-b7ed-43ce-bfb9-160a3b0a8013">
 
- 13. Complete the following:
-     a. Click the magnifying glass on the M3 Menu widget to display the Search field.
-     b. Type Company. Open (MNS095) in the M3 Menu widget Search field.
+ 14. Complete the following: <br>
+     a. Click the magnifying glass on the M3 Menu widget to display the Search field.<br>
+     b. Type Company. Open (MNS095) in the M3 Menu widget Search field. <br>
      c. The menu is now updated and Company. Open no longer displays in the menu search 
-     results as an option
+     results as an option. <br>
 
 ### Revert to default menu version
  1. Type User. Open in the M3 Menu widget Search field. Results display.
@@ -138,23 +139,20 @@ the list.
  14. Click the Next button. Panel B1 displays again.
  15. Click the Close (X) button to close the User.Open (MNS150) program. The Infor M3 Training
      homepage displays.
- 16. Complete the following to log out:
-     a. Click the User Menu icon. A list displays.
-     b. Click the Sign out list item. The message, “Sign-out Successful” displays.
-     c. Click Close (X) to close the internet browser tab. The Training desktop displays.
+ 16. Complete the following to log out: <br>
+     a. Click the User Menu icon. A list displays. <br>
+     b. Click the Sign out list item. The message, “Sign-out Successful” displays. <br>
+     c. Click Close (X) to close the internet browser tab. The Training desktop displays. <br>
  17. Follow the steps in Exercise 2.1 Part 1 to log back in to Infor OS. The Infor M3 Training
      homepage displays.
- 18. Complete the following:
-     a. Click the magnifying glass on the M3 Menu widget to display the Search field.
-     b. Type Company. Open in the M3 Menu widget Search field.
-     c. The menu is now updated and Company. Open displays in the menu search results again
+ 18. Complete the following: <br>
+     a. Click the magnifying glass on the M3 Menu widget to display the Search field. <br>
+     b. Type Company. Open in the M3 Menu widget Search field. <br>
+     c. The menu is now updated and Company. Open displays in the menu search results again <br>
 <img width="225" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/0918baa3-17f6-4a11-93e4-246709fc541d">
 
 ### User management
-- **IFS** is the internal system of record for users in the system. This is where users are added and updated 
-and where security roles are configured. IFS is responsible for storing user attributes that are retrieved as 
-claims when a session is constructed during sign-in. Federated security and single sign on (SSO) are 
-also configured in the IFS user interface.
+- **IFS** is the internal system of record for users in the system. This is where users are added and updated and where security roles are configured. IFS is responsible for storing user attributes that are retrieved as claims when a session is constructed during sign-in. Federated security and single sign on (SSO) are also configured in the IFS user interface.
 - M3 CE Core is the central part of the ERP system, the application where the business logic resides.
 - M3 CE Core maintains a mapping between IFS users and M3 CE Core users: each M3 CE Core user is mapped to the corresponding user in IFS.
 - User information is synchronized between M3 CE Core and IFS through BODs.
@@ -179,50 +177,45 @@ also configured in the IFS user interface.
     user ID is 300T04, type A_300T04 in the User Name field.
  8. Type [the instructor’s email address] in the Email Address field.
  9. Verify the Send Invitation check box is selected.
- 10. Click the Save button. A message, “Successfully Saved Your data has been updated.” displays 
-     in the upper right corner and the Users panel displays again. An email has been immediately 
-     sent to the email address (the instructor, in this case) and provides a link to verify the account. If 
-     the instructor clicks the link, they will be invited to verify the account and create a password. This 
-     is based on a system option. In some cases, companies choose not to send this initial email
-     because there may be more setup required.
- 11. Complete the following to populate the record with user specific data:
-     a. Type [your first initial] in the Search field.
-     b. Press Enter.
-     c. Locate the record added in step 10.
+ 10. Click the Save button. A message, “Successfully Saved Your data has been updated.” displays in the upper right corner and the Users panel displays again. An email has been immediately sent to the email address (the instructor, in this case) and provides a link to verify the account. If the instructor clicks the link, they will be invited to verify the account and create a password. This is based on a system option. In some cases, companies choose not to send this initial email because there may be more setup required.
+ 11. Complete the following to populate the record with user specific data: <br>
+     a. Type [your first initial] in the Search field. <br>
+     b. Press Enter. <br>
+     c. Locate the record added in step 10. <br>
      d. Click the User Details button in the second column. A panel opens and displays the 
-        record the instructor added.
-     e. Verify the Details tab is selected.
-     f. Review the information displayed on the Details tab.
-     g. Type [exactly the same text as in the User Name field which is A_009Tnn] in the IFS IONPerson ID field.
-     h. Type B_[your assigned 009Tnn user ID] in the M3 User Alias field.
+        record the instructor added. <br>
+     e. Verify the Details tab is selected. <br>
+     f. Review the information displayed on the Details tab. <br>
+     g. Type [exactly the same text as in the User Name field which is A_009Tnn] in the IFS IONPerson ID field. <br>
+     h. Type B_[your assigned 009Tnn user ID] in the M3 User Alias field. <br>
         Note: Per company specifics, the additional fields can be populated based on how you 
-        manage your employee information such as Title, Department, Manager, etc.
+        manage your employee information such as Title, Department, Manager, etc. <br>
      i. Click the Save Item icon. A message, “Successfully Saved Your data has been updated.” 
-        displays in the upper right corner.
- 12. Complete the following to add associated accounting entities:
+        displays in the upper right corner. <br>
+ 12. Complete the following to add associated accounting entities: <br>
      a. Click the Accounting Entities tab. There are no accounting entities assigned to the newly 
-        created user.
-     b. Click the Add new item icon. The Select Accounting Entities window opens.
-     c. Click the Records per page drop-down arrow in the lower right corner. A list displays.
-     d. Click the 25 list item to display 25 records per page.
-     e. Click to select the check box associated with the following accounting entities:
-        o 009_
-        o 009_AAA
-        o 009_BBB
-        o 009_ZZZ
+        created user. <br>
+     b. Click the Add new item icon. The Select Accounting Entities window opens. <br>
+     c. Click the Records per page drop-down arrow in the lower right corner. A list displays. <br>
+     d. Click the 25 list item to display 25 records per page. <br>
+     e. Click to select the check box associated with the following accounting entities: <br>
+        o 009_ <br>
+        o 009_AAA <br>
+        o 009_BBB <br>
+        o 009_ZZZ <br>
      f. Click the Add & Close button. The Accounting Entities tab displays again with the newly 
-        added accounting entities.
+        added accounting entities. <br>
      g. Click the Save Item icon. A message, “Successfully Saved Your data has been updated.” 
-        displays in the upper right corner.
+        displays in the upper right corner. <br>
  13. Complete the following to add the required security role:
-     a. Click the Security Roles tab.
-     b. Click the Add new item button.
-     c. Type M3UI in the Search field.
-     d. Press Enter. Results display.
-     e. Click the check box preceding M3UI-User.
-     f. Click the Add & Close button.
+     a. Click the Security Roles tab. <br>
+     b. Click the Add new item button. <br>
+     c. Type M3UI in the Search field. <br>
+     d. Press Enter. Results display. <br>
+     e. Click the check box preceding M3UI-User. <br>
+     f. Click the Add & Close button. <br>
      g. Click the Save icon. A message, “Successfully Saved Your data has been updated.” 
-        displays in the upper right corner.
+        displays in the upper right corner. <br>
  14. Click the Back Arrow icon (screenshot below). The main Users panel displays.
 
 ## ION Desk
@@ -249,45 +242,46 @@ also configured in the IFS user interface.
 <img width="242" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/6996aea0-c6c2-459d-9546-9c39cc6e5f8c">
 
 ### Review the user in the Infor M3 application, and User Management program
- 1. Complete the following back in the Infor M3 application:
-    a. Click the Infor icon. The Infor M3 Training homepage displays.
-    b. Click the M3 Menu widget’s magnifying glass icon to display the Search field.
-    c. Type User. Open in the M3 Menu widget Search field. Results display.
-    d. Click the User. Open link. The User. Open (MNS150) program opens. Panel B1 displays.
-    e. Collapse the Context app pane if currently expanded.
-    f. Type B_ in the User field.
-    g. Click the Apply button.
-    h. Click to highlight the row associated with B_[your assigned 009Tnn user ID] .
-    i. Click Options > Change. Panel E displays. The User status is 20-Active.
-    j. Click the Next button until panel B1 displays again.
+ 1. Complete the following back in the Infor M3 application: <br>
+    a. Click the Infor icon. The Infor M3 Training homepage displays. <br>
+    b. Click the M3 Menu widget’s magnifying glass icon to display the Search field. <br>
+    c. Type User. Open in the M3 Menu widget Search field. Results display. <br>
+    d. Click the User. Open link. The User. Open (MNS150) program opens. Panel B1 displays. <br>
+    e. Collapse the Context app pane if currently expanded. <br>
+    f. Type B_ in the User field. <br>
+    g. Click the Apply button. <br>
+    h. Click to highlight the row associated with B_[your assigned 009Tnn user ID] . <br>
+    i. Click Options > Change. Panel E displays. The User status is 20-Active. <br>
+    j. Click the Next button until panel B1 displays again. <br>
     
- 3. Complete the following in User Management:
-    a. Click the User Menu icon. A menu displays.
-    b. Click the User Management menu item.
-    c. Click to select the check box associated with A_[your assigned 009Tnn user ID] .
-    d. Click the Action drop-down arrow. A menu displays.
+ 3. Complete the following in User Management: <br>
+    a. Click the User Menu icon. A menu displays. <br>
+    b. Click the User Management menu item. <br>
+    c. Click to select the check box associated with A_[your assigned 009Tnn user ID] . <br>
+    d. Click the Action drop-down arrow. A menu displays. <br>
     e. Click the Disable menu item. The message, “Are you sure that you would like to disable 1 
-    users?” displays.
-    f. Click the Yes button.
-    <img width="217" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/f476ca41-c48b-4b8c-a9f7-aa3919841a78">
+    users?” displays. <br>
+    f. Click the Yes button. <br>
+    <img width="217" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/f476ca41-c48b-4b8c-a9f7-aa3919841a78"> <br>
 ### Review the result in the ION Desk and in the Infor M3 User. Open program
- 1. Complete the following to go back to ION Desk:
-    a. Click the App Menu icon. A menu displays.
-    b. Click the ION Desk menu item. The OneView pane displays again.
-    c. If not in the One View pane, do the following:
-       o  Click the Menu icon. A list displays.
-       o  Click the OneView list item. The OneView pane displays
-       o  Click the Search button. Several document links display.
-    d. Click the Sync.SecurityUserMaster link twice. The messages on left refresh.
-    e. Click the scroll bar of the messages on the left.and scroll down.
-    f. Click the [last message] in the list on the left.
-    g. Double-click the Page icon. The Message Content window opens.
-    h. Press Ctrl + F. The Search for field opens.
+ 1. Complete the following to go back to ION Desk: <br>
+    a. Click the App Menu icon. A menu displays. <br>
+    b. Click the ION Desk menu item. The OneView pane displays again. <br>
+    c. If not in the One View pane, do the following: <br>
+       o  Click the Menu icon. A list displays. <br>
+       o  Click the OneView list item. The OneView pane displays <br>
+       o  Click the Search button. Several document links display. <br>
+    d. Click the Sync.SecurityUserMaster link twice. The messages on left refresh. <br>
+    e. Click the scroll bar of the messages on the left.and scroll down. <br>
+    f. Click the [last message] in the list on the left. <br>
+    g. Double-click the Page icon. The Message Content window opens. <br>
+    h. Press Ctrl + F. The Search for field opens. <br>
     i. Type disabled in the Search field. The details of your previous action to disable the new user 
-       you created are highlighted. It reads:
-    `<Code listID="Security User Status">Disabled</Code>`
+       you created are highlighted. <br>
+       It reads: <br>
+    `<Code listID="Security User Status">Disabled</Code>` <br>
     j. Click the Close (X) button to close the Message Content window. The OneView displays 
-       again.
+       again. <br>
  2. Click the Infor icon. The Infor M3 Training homepage displays.
  3. Click the User. Open link in the M3 Menu widget. Panel B1 displays.
  4. Double-click the row associated with [your first and last name]. Panel E displays and shows 
