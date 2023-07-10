@@ -225,6 +225,12 @@ also configured in the IFS user interface.
         displays in the upper right corner.
  14. Click the Back Arrow icon (screenshot below). The main Users panel displays.
 
+## ION Desk
+- The ION Desk is nothing but it acts as an interface between the things like M3 or other facilities and distribution things which is used to connect things.
+- **EXAMPLE: -** start button -> Orderfull (Purchase order) -> (XML/XD) File -> ION -> Conditions -> (XML/XD) File -> M3. This can be done even in reverse.
+- The above example is called the **Work Flow**.
+- **Orderfull** works like tracking. Same as how Amazon order tracking works for example.
+  
 ###  Access the ION Desk to review the entry
  1. Click the App Menu icon. A menu displays.
  2. Click the ION Desk menu item. The Status Overview panel displays.
@@ -238,6 +244,9 @@ also configured in the IFS user interface.
  7. Click [the last event noted by the timestamp] in the list of messages on the left side.
  8. Click the paper icon (shown above). The Document Details display and if no errors exist, you 
     may proceed.
+<img width="451" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/17308f24-2dc7-45f7-b53f-7ee626890ddf">
+ 9. The paper symbol in this is the XML/XD format file of the Outbound schema.
+<img width="242" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/6996aea0-c6c2-459d-9546-9c39cc6e5f8c">
 
 ### Review the user in the Infor M3 application, and User Management program
  1. Complete the following back in the Infor M3 application:
@@ -251,7 +260,8 @@ also configured in the IFS user interface.
     h. Click to highlight the row associated with B_[your assigned 009Tnn user ID] .
     i. Click Options > Change. Panel E displays. The User status is 20-Active.
     j. Click the Next button until panel B1 displays again.
- 2. Complete the following in User Management:
+    
+ 3. Complete the following in User Management:
     a. Click the User Menu icon. A menu displays.
     b. Click the User Management menu item.
     c. Click to select the check box associated with A_[your assigned 009Tnn user ID] .
@@ -259,3 +269,33 @@ also configured in the IFS user interface.
     e. Click the Disable menu item. The message, “Are you sure that you would like to disable 1 
     users?” displays.
     f. Click the Yes button.
+    <img width="217" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/f476ca41-c48b-4b8c-a9f7-aa3919841a78">
+### Review the result in the ION Desk and in the Infor M3 User. Open program
+ 1. Complete the following to go back to ION Desk:
+    a. Click the App Menu icon. A menu displays.
+    b. Click the ION Desk menu item. The OneView pane displays again.
+    c. If not in the One View pane, do the following:
+       o  Click the Menu icon. A list displays.
+       o  Click the OneView list item. The OneView pane displays
+       o  Click the Search button. Several document links display.
+    d. Click the Sync.SecurityUserMaster link twice. The messages on left refresh.
+    e. Click the scroll bar of the messages on the left.and scroll down.
+    f. Click the [last message] in the list on the left.
+    g. Double-click the Page icon. The Message Content window opens.
+    h. Press Ctrl + F. The Search for field opens.
+    i. Type disabled in the Search field. The details of your previous action to disable the new user 
+       you created are highlighted. It reads:
+    `<Code listID="Security User Status">Disabled</Code>`
+    j. Click the Close (X) button to close the Message Content window. The OneView displays 
+       again.
+ 2. Click the Infor icon. The Infor M3 Training homepage displays.
+ 3. Click the User. Open link in the M3 Menu widget. Panel B1 displays.
+ 4. Double-click the row associated with [your first and last name]. Panel E displays and shows 
+    that the user status has changed to 90-Deactivated. This is based on the changes made in IFS.
+ 5. Click the Close (X) button to close all open Infor M3 programs. The Infor M3 Training homepage 
+    displays.
+### H5 Settings tab
+- The first tab on the H5 Administration page is H5 Settings. You can make special settings assignments based on user roles by using the Infor M3 H5 settings tool. These special assignments are called rules.
+
+
+
