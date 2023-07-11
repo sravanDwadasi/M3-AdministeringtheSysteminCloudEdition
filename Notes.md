@@ -165,6 +165,7 @@ the list.
 - Monitor recent user activity and mobile sessions
 ##### When a new user is created in Infor Ming.le, the Sync.SecurityUserMaster BOD is published.
 
+## Demo 2.3: Create a new user in IFS
 ###  Add the user in IFS
  1. Click the User Menu icon. A menu displays.
  2. Click the User Management menu item. The Users panel of Infor Federation Services tool opens.
@@ -199,10 +200,10 @@ the list.
      c. Click the Records per page drop-down arrow in the lower right corner. A list displays. <br>
      d. Click the 25 list item to display 25 records per page. <br>
      e. Click to select the check box associated with the following accounting entities: <br>
-        o 009_ <br>
-        o 009_AAA <br>
-        o 009_BBB <br>
-        o 009_ZZZ <br>
+        - 009_ 
+        - 009_AAA
+        - 009_BBB
+        - 009_ZZZ
      f. Click the Add & Close button. The Accounting Entities tab displays again with the newly 
         added accounting entities. <br>
      g. Click the Save Item icon. A message, “Successfully Saved Your data has been updated.” 
@@ -268,9 +269,9 @@ the list.
     a. Click the App Menu icon. A menu displays. <br>
     b. Click the ION Desk menu item. The OneView pane displays again. <br>
     c. If not in the One View pane, do the following: <br>
-       o  Click the Menu icon. A list displays. <br>
-       o  Click the OneView list item. The OneView pane displays <br>
-       o  Click the Search button. Several document links display. <br>
+       - Click the Menu icon. A list displays.
+       - Click the OneView list item. The OneView pane displays 
+       - Click the Search button. Several document links display. <br>
     d. Click the Sync.SecurityUserMaster link twice. The messages on left refresh. <br>
     e. Click the scroll bar of the messages on the left.and scroll down. <br>
     f. Click the [last message] in the list on the left. <br>
@@ -291,5 +292,43 @@ the list.
 ### H5 Settings tab
 - The first tab on the H5 Administration page is H5 Settings. You can make special settings assignments based on user roles by using the Infor M3 H5 settings tool. These special assignments are called rules.
 
+## **Exercise 2.4:** Display credit limit script
+### **Part 1:** Review a customer’s credit limit
+ 1. Type Customer Credit Limit. Open in the M3 Menu widget Search field. Results display.
+ 2. Click the Customer Credit Limit. Open option. The Customer Credit Limit. Open (CRS315) program opens. Panel B displays.
+ 3. Verify 1-Division, Payer displays in the Sorting order field.
+ 4. Type 3 in the Payer (positioning) field.
+ 5. Click the Apply button. The list refreshes.
+ 6. Click to highlight the row related to payer 30001.
+ 7. Click Options > Display. Panel E displays. The credit limit for the payer displays. This is in USD currency as indicated by the Currency field.
+ 8. Click the Close (X) button to close the Customer Credit Limit. Open (CRS315) program. The Infor M3 Training homepage displays.
+### **Part 2:** Add the script to the appropriate panel
+ 1. Start the Customer Order. Open (OIS100) program. Panel A displays and here is currently no 
+     credit limit information on this panel.
+ 2. Click Tools > Personalize > Scripts. The Scripts dialog box opens.
+ 3. Type OIS100A_SalesAndOverdue_H5_V1 in the Script field.
+ 4. Type 3, 40, 120, Credit limit in the Argument field. This represents the label position (3, 40), the 
+    field width (120), and the label text (Credit limit).
+ 5. Click the Add button. The script displays in the Created Scripts field.
+ 6. Click the Save button. The Customer Order. Open (OIS100/A) program displays again.
+ 7. Click Actions > Refresh. The field with the credit limit information is added.
+Part 3: Test the script
+1. Type 30001 in the Customer field.
+2. Press Enter. A message, “Confirm” displays on the lower left hand corner. The credit limit field is 
+populated. The credit limit from Part 1 displays along with the currency symbol.
+3. Click the Close (X) button to close the Customer Order. Open (OIS100) program. The Infor M3 
+Training homepage displays.
 
-
+## 1. Describe the features of Infor M3 H5.
+- Secure path for the future
+- Low TCO
+- No more upgrades
+- Fast access to new innovations
+- Flexibility and scalability
+- Security
+- Best-in-class resilience
+- Openness to support needs
+## 2. Describe each unique M3 CE MT customer environment.
+- Each unique customer environment is known as a tenant. Each tenant gets a unique and isolated segment of the solution – all hosted in the Infor M3 multi-tenant     cloud on AWS. 
+- Tenants cohabit and share the application server resources but cannot “see” each other. 
+- Databases are separate for manageability purposes.
