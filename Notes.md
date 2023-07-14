@@ -332,3 +332,15 @@ Training homepage displays.
 - Each unique customer environment is known as a tenant. Each tenant gets a unique and isolated segment of the solution – all hosted in the Infor M3 multi-tenant     cloud on AWS. 
 - Tenants cohabit and share the application server resources but cannot “see” each other. 
 - Databases are separate for manageability purposes.
+## Introducing companies and divisions
+Infor M3 uses companies and divisions to organize data. The Infor M3 standard database schema (library) contains database tables, views, and indexes for up to 999 companies and their divisions.
+### Infor M3 companies
+- An Infor M3 company relates to your own organization’s structure. For some organizations, a single company represents their entire world-wide organization; for others, using a company to represent the
+- Infor M3 companies provide a means of separating sets of data. Multiple companies can run within the same database schema and operating environment. This is useful when a business organization consists of two or more unique entities.
+- Organization in each country may more effectively meet business needs.
+  
+### Infor M3 divisions
+- companies are the major structural unit and divisions are the minor structural unit.
+- Since the division identifier is a three-character alphanumeric field, a company can have several divisions.
+- A blank division is always created. This is sometimes referred to by Infor M3 consultants as the central division.
+
