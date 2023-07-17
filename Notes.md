@@ -343,4 +343,134 @@ Infor M3 uses companies and divisions to organize data. The Infor M3 standard da
 - companies are the major structural unit and divisions are the minor structural unit.
 - Since the division identifier is a three-character alphanumeric field, a company can have several divisions.
 - A blank division is always created. This is sometimes referred to by Infor M3 consultants as the central division.
+### There are three special ASJs:
+- **CMNGJOB:–** This job is responsible for taking jobs from the Java job queues and delivering them to the system for processing. If this job is not active, no                    batch jobs will be processed.
+- **CSCHJOB :–** This is the Infor M3 job scheduler. It is responsible for starting jobs at their scheduled dates and times.
+- **SES900:–** This job maintains role-based security settings.
+### Routing jobs to job queues
+- Jobs can be routed to specific job queues according to settings you define in **Job. Connect Job Queue (MNS310)**.
+### Queuing priority:-
+- 1 to 9 where 1 = highest priority, 9 = lowest.
+- Unassigned jobs go to QBATCH with a default priority of 5.
+### Jobs are checked for definitions in the following order:
+- Job and user
+- Job and role or user group
+- Job
+- User
+- User group
+### Monitoring job processing
+Use **Job. Display History (MNS320)** to perform the following tasks:
+- View job queues: Only jobs not yet started or jobs ended and Job History requested
+- View or change priority
+- View or change queue
+### View job status:
+- 00 – Waiting to be run
+- 15 – Not able to run (CMNGJOB failed to start the job)
+- 20 – Currently active
+- 25 – Job ended abnormally
+- 30 – Job has finished
+## Exercise 3.1: Manage jobs:-
+### Part 1: Create a job queue:-
+1. Type Job Queue. Open in the M3 Menu widget Search field. Results display.
+2. Click the Job Queue. Open option. The Job Queue. Open (MNS300) program opens. Panel B1 displays.
+3. Type [your 009Tnn assigned user ID] in the Job queue filter field.
+4. Click Options > Create. Panel E displays.
+5. Type [your 009Tnn assigned user ID] job queue in the Description field.
+6. Type 5 in the Max active jobs field.
+7. Click the Next button. Panel B1 displays again.
+8. Click the Close (X) button to close the Job Queue. Open (MNS300) program. The Infor M3 Training homepage displays again.
+### Part 2: Create a new job entry
+Type Job. Connect Job Queue in the M3 Menu widget Search field. Results display.
+Click the Job. Connect Job Queue option. The Job. Connect Job Queue (MNS310) program 
+opens. Panel B1 displays.
+Type MMS631CL in the Job field.
+Type [your 009Tnn assigned user ID] in the User/group field.
+Click Options > Create. Panel E displays.
+Type [your 009Tnn job queue in part 1] in the Job queue field.
+Click to select the Save job history check box.
+Click the Next button. Panel B1 displays again.
+Click the Close (X) button to close the Job. Connect Job Queue (MNS310) program. The Infor 
+M3 Training homepage displays again.
+### Part 3: Run a batch job to confirm the new job queue is used
+1. Type Item. Print in the M3 Menu widget Search field. Results display.
+2. Click the Item. Print option. The Item. Print (MMS630) program opens. Panel E displays.
+3. Click the Next button. The message, “Job MMS631CL has been submitted” displays in the 
+   bottom-left margin of the panel.
+4. Click the Close (X) button to close the Item. Print (MMS630) program. The Infor M3 training
+   homepage displays.
+5. Type Job. Display History in the M3 Menu widget Search field. Results display.
+6. Click the Job. Display History option. The Job. Display History (MNS320) program opens.
+   Panel B1 displays.
+7. Click the Filter Options drop-down arrow (see screenshot below). Filtering options expand.
+8. Click the Sorting Order drop-down arrow. A list displays.
+9. Click the 3-Changed by, Status, Job Queue, Job q prt list option.
+10. Type [your 009Tnn assigned user ID] in the Changed by filter field.
+11. Click the Apply button. The job queue associated with [your assigned 009Tnn user ID] displays. This confirms the job was sent to the correct queue of QBATCH.
+12. Click the Close (X) button to close the Job. Display History (MNS320) program. The Infor M3 Training homepage displays.
+## Exercise 3.2: Working with job scheduler
+### Part 1: Create a job scheduling calendar
+1. Type Job Schedule Calendar. Open in the M3 Menu widget Search field. Results display.
+2. Click the Job Schedule Calendar. Open option. The Job Schedule Calendar. Open (SHS060) program opens. Panel B1 displays.
+3. Type CAL_[your 009Tnn assigned user ID] in the Job sch cal filter field.
+4. Click Options > Create. Panel E displays.
+5. Type [your first and last name] in the Name field.
+6. Type [your three letter initials] job scheduling calendar in the Description field.
+7. Click the Next button. Panel F displays.
+8. Verify [today’s date in YYMMDD format] displays in the From Date field.
+9. Type [one month from today in YYMMDD format] in the To Date field.
+10. Click to select the following check boxes:
+    • Monday
+    • Wednesday
+    • Friday
+11. Click the Next button. Panel B displays with a list of dates.
+12. Right-click the first date on the first row. The row is highlighted and a list displays.
+13. Click the Add Text to Quicknote list item.
+14. Click Options > Delete. Panel D displays with the message, “Confirm deletion of schedule date YYMMDD” in the bottom-left corner of the panel.
+15. Click the Next button. Panel B displays and the top row you deleted appears as a blank, grayedout row.
+16. Type [the deleted schedule date] in the Schedule Date filter field.
+17. Click Options > Create. The [created schedule date] now displays in the list.
+18. Click the Close (X) button to close all open Infor M3 programs. The Infor M3 Training homepage displays.
+### Part 2: Create a job schedule category
+1. Type Job Schedule Category. Open in the M3 Menu widget Search field. Results display.
+2. Click the Job Schedule Category. Open option. The Job Schedule Category. Open (SHS050) 
+   program opens. Panel B displays.
+3. Type A[nn] in the Cat filter field where nn represents your student number.
+4. Click Options > Create. Panel E displays.
+5. Type [your assigned 009Tnn user ID] all times of day in the Description field.
+6. Type 000000 in the Fr time field.
+7. Type 235959 in the To time field.
+8. Click the Next button. Panel B displays with a new line for your category.
+9. Click the Close (X) button to close the Job Schedule Category. Open (SHS050) program. The Infor M3 Training homepage displays.
+### Part 3: Set the job schedule configuration
+1. Type Job Schedule Function. Open in the M3 Menu widget Search field. Results display.
+2. Click the Job Schedule Function. Open option. The Job Schedule Function. Open (SHS030/) program opens. Panel B1 displays.
+3. Type MMS630 in the Function filter field.
+4. Type [your assigned 009Tnn user ID] in the User filter field.
+5. Click Options > Create. Panel E displays.
+6. Click the JS allowed drop-down arrow. A List displays.
+7. Click the 1-Can sch or run list item.
+8. Type A[your assigned student number] in the JS category field.
+9. Type MMS630 in the Program field.
+10. Type MMS631CL in the Job field.
+11. Click the Application drop-down arrow. A list displays.
+12. Click the MPM list item.
+13. Click the Next button. The Job Schedule Program. Open (SHS031) program opens. Panel B 
+    displays.
+14. Verify that MMS630 displays in the Program field.
+15. Click Options > Create. Panel E displays.
+16. Click the Next button. The Job Schedule Field. Open (SHS035) program opens. Panel B 
+    displays.
+17. Click the Previous button until the Job Schedule Program. Open (SHS031/B) program displays again. The row related to MMS630 displays in the list.
+18. Click the Close (X) button until the Infor M3 Training homepage displays.
+
+
+
+### The system maintenance run
+- There are several functions in Infor M3 BE that are controlled by date, and when the date changes several checks and updates must be done.
+- The system maintenance run executes several programs which “clean up” certain elements of the M3 database.
+- Some of the programs are always executed when the system maintenance run starts, while others are started optionally.
+- The system maintenance run is an alternative to the normal night run.
+- It adds flexibility since you can define your own runs.
+- **Note:*** Infor recommends running the system maintenance run each night.
+-  For a function to run on a schedule, the system maintenance run must be defined in the M3 Business Engine Job Scheduler as a scheduled job.
 
