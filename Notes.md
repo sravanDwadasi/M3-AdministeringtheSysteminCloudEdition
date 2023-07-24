@@ -474,3 +474,147 @@ M3 Training homepage displays again.
 - **Note:*** Infor recommends running the system maintenance run each night.
 -  For a function to run on a schedule, the system maintenance run must be defined in the M3 Business Engine Job Scheduler as a scheduled job.
 
+
+### Introducing Infor M3 document and media solutions
+Infor M3 can generate several types of output. The three categories of output are Ad Hoc Reporting output, Infor M3 Standard Reports output, and Infor M3 Standard Documents output.
+### Output solutions available for Infor M3 include the following:
+- Infor M3 Output Solution (MOS)
+- Infor M3 XML Configurable Output Management (COM)
+- IDM Output Management (with Infor M3 XML Configurable)
+
+### Infor M3 Output Solution (MOS)
+- Documents to be read by users are managed via output servers such as the Infor M3 Output Solution (MOS) which is also known as OpenText StreamServe.
+- A stream file is a structured file that is sent to a specified port on the Infor M3 Output Solution server.
+- It is sent via TCP/IP from the Infor M3 application server.
+- In the MOS, each stream file received triggers a predefined document layout.
+ <img width="444" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/9a005317-a4c1-41ce-bfd9-6fe76696090b">
+<br>
+
+### Infor M3 XML Configurable Output Management (COM)
+- Infor M3 Configurable Output Management (COM) uses existing Infor M3 output functions to generate XML files as an alternative to stream files.
+
+#### The key benefits of Infor M3 COM include:
+- A modern and flexible format in the form of XML instead of stream files
+- A modern layout design engine tool of OpenText StoryTeller
+- A way to change output data without the need of Java code modification
+- An easier connection to Infor’s IDM tool integrating with the OpenText StreamServe solution
+  
+#### Long-term benefits include:
+- Less time and effort when performing Infor M3 software upgrades in the future
+- Less overall maintenance
+- Less human errors creating document.
+  
+<img width="456" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/f9c17a0a-c2c3-4e73-b926-007dc935d4fd"> <br>
+
+### Exercise 4.1: Work with Infor M3 COM
+
+#### Part 1: Review components Infor M3 COM
+1. Type List and Printer programs. Configure in the M3 Menu widget Search field. Results display.
+2. Click the List and Printer programs. Configure option. The List and Printer programs. Configure (CMS005) program opens. Panel B1 displays.
+3. Click the Filter Options link (screenshot below). The Sorting order field displays.
+4. Click the Sorting order drop-down arrow. A list displays.
+5. Click the 3-Printer file list item.
+6. Type APS in the Prnt file field.
+7. Press Enter.
+8. Click to highlight the APS print file row associated with [your assigned user ID number]. For example, if your user number is 04, click to highlight the fourth row down from the first listed APS print file.
+9. Click Related > XML structure. The XML Structure. Open (CMS006) program opens. Panel B1 displays.<br>
+**Note:** Several versions of the same record display here.
+10. Click to highlight [the first row].
+11. Click Related > XML Structure. Open Section. The XML Structure. Open Section (CMS007) program opens. Panel B1 displays.<br>
+**Note:** The elements column represents fields used.
+12. Click to highlight the row associated with sequence number 4.
+13. Click Related > XML Structure Section. Open Element. The XML Structure Section. Open Element (CMS009) program opens. Panel B1 displays. From here you can add related tables, virtual fields, section tables, and field groups.
+14. Complete the following to review Output. Manage per Job and help text: <br>
+ a. Press CTRL+R. The Search and Start window opens. <br>
+ b. Type MNS270 in the Search and Start field. The Output. Manage per Job (MNS270) program opens. Panel B1 displays. <br>
+ c. Click Tools > User Settings. The User Settings window opens. <br>
+ d. Verify the Display help tooltips check box is selected. <br>
+ e. Click the Save button. <br>
+ f. Hover your mouse over the Sts column header. A detailed explanation of different status types displays. <br>
+ 
+#### Part 2: Access Infor Document Management
+1. Click the App menu icon. A menu displays.
+2. Click the Document Management menu item. Infor Document Management (IDM) displays.
+3. Click the Search Document Management drop-down arrow. A menu displays.
+4. Click the Document Type drop-down arrow. A list displays.
+5. Click the M3 Layout Template list item.
+6. Click the Property or Attribute drop-down arrow. A list displays.
+7. Click the Title list item.
+8. Click the = Equal drop-down arrow. A list displays.
+9. Click the Like list item.
+10. Type PPS608PF in the Search field.
+11. Click the Search button.
+12. Click the PPS608PF thumbnail.
+13. Click the Display button. Details related to the PPS608PF purchase order template display.
+14. Review the details.
+15. Click the Infor icon. The Infor M3 Training homepage displays.
+16. Type XML Structure. Open in the M3 Menu widget Search field. Results display.
+17. Click the XML Structure. Open option. The XML Structure. Open (CMS006) program opens. Panel B1 displays.
+18. Type PPS608 in the Printer file filter field.
+19. Press Enter.
+20. Click to highlight the row related to PPS608PF.
+21. Click Related > XML Structure. Open Section. The XML Structure. Open Section (CMS007) program opens. Panel B1 displays the same information we saw in the IDM template.
+22. Click the Close (X) button to close all open Infor M3 programs. The Infor M3 Training homepage displays.
+
+### MOS vs COM
+
+<img width="443" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/41f9a31b-f6a9-494f-97e5-8342bc6601ab">
+<br>
+
+### IDM output management
+- IDM output management is the built-in output management solution for Infor M3 CE.
+- The solution takes layout templates and combines them with data to produce PDF documents and later Excel spreadsheets.
+- Customers can also customize the layout templates and store them in IDM.
+
+#### IDM and M3 CE Core are integrated by M3 CE Core using Infor Document Management APIs. The integration supports the following output media types:
+- Printing and sending the document in PDF format by e-mail
+- Saving the PDF document in Infor Document Management
+
+#### IDM and M3 CE Core are integrated via:
+- ION API (REST enabled)
+- Context Business Messages
+- BOD nouns
+
+#### The Capture Document BOD is an outbound BOD that is sent by IDM when capturing different types of documents
+
+![image](https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/bae09aba-264d-4f87-8669-30cfc904413a)
+
+### Output solutions in Infor M3 CE
+
+<img width="371" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/46b95378-30f7-4bc2-99fe-fa089ea160e9">
+
+### Infor Enterprise Collaborator (IEC)
+- Infor Enterprise Collaborator (IEC) is an Infor M3 software component that enables you to create, send,and receive electronic documents in XML and flat file formats.
+- IEC provides message-based collaboration between functions in the Infor M3 enterprise management system and other external applications, in 
+order to enable business process collaboration within and across enterprises.
+- IEC includes enabling technology, flexible development tools, and several ready-made industry standard interfaces.
+
+### Messages
+- The Messages tab provides features for searching messages based on status and retrieving messagespecific details. You can view messages, message-related activities, and filter message views.
+- Depending on the state of a message, links provide access to related tasks.
+
+### Server
+- The Server tab provides server activity monitoring of IEC. It allows you to view different properties and reports.
+
+### Communication
+The Communication tab provides a way to manage communication channels.
+
+### Events
+On the Events tab you can search for IEC application logs.
+
+### Utilities
+On the Utilities tab you can perform tasks relating to reloading, property checks, and translation data utilities.
+
+### Settings
+Tenant administrators can change the date format and time zone settings for the Enterprise Collaborator Administration pages by using the Date/Format settings link. Changes will take effect immediately.
+
+### About
+The About link displays version information for Infor Enterprise Collaborator.
+
+## Infor Event Hub and Event Analytics
+-  Event Hub and Event Analytics are managed by Tenant Administrators and are not used by regular M3 CE users.
+
+<img width="445" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/1743baa6-2c63-4cab-b445-d1510c99f70c">
+
+
+
