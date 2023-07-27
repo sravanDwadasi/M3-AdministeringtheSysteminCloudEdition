@@ -627,3 +627,65 @@ The About link displays version information for Infor Enterprise Collaborator.
   
 <img width="437" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/005125ba-0aec-41f9-98f0-21bf4231c735">
 
+-  Event Analytics is used for filtering events for outbound M3 CE BODs and FBMs.
+
+  <img width="434" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/6b56b950-b749-41a3-8a79-8df7df5b142e">
+
+### Data Lake Publisher
+- Data Lake Publisher enables M3 BE to publish data to Infor Data Lake.
+-  By selecting documents (equivalent to Infor M3 tables), Event Hub subscriptions are created and events from the selected documents are published to Infor Data      Lake through ION Messaging Service.
+
+  <img width="431" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/eafd650f-ea32-4df1-95cb-50db040bf6d1">
+
+### Exercise 5.1: Navigate business process management tools
+### Part 1: Navigate the BOD Processor Administration tool
+1. Click the App menu icon. A menu displays.
+2. Click the Infor M3 menu item. Infor M3 H5 displays.
+3. Verify the menu is expanded on the left.
+4. Click Administration Tools > BOD Processor Administration. The BOD Processor Administration page displays. Here is where one can define and use BODs and make    
+   BODs available to different companies and divisions.
+5. Click the BODs tab.
+6. Review the information displayed.
+7. Click the Master AE tab.
+8. Review the information displayed.
+   
+### Part 2: Navigate the Enterprise Collaborator Administration tool
+1. Click Administration Tools > Enterprise Collaborator Administration. The Enterprise Collaborator Administration page displays.
+2. Click the Advanced Search link.
+3. Review the information displayed.
+4. Click the CPU Usage link.
+5. Review the information displayed.
+6. Click the Retry/Redetect link.
+7. Review the information displayed.
+8. Click the Agreement Retry/Redetect Messages link.
+9. Review the information displayed.
+10. Click the Ordered link.
+11. Review the information displayed.
+12. Click the Variation ID link.
+13. Review the information displayed.
+14. Click the Suppressed Error Reports link.
+15. Review the information displayed.
+16. Click the Status link.
+17. Click the Show link related to the first row.
+18. Click the Log icon.
+
+<img width="263" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/ab4d6ab8-f837-402a-9561-f0782481685f">
+
+19. Review the information displayed.
+20. Click the Close (X) button to close the Enterprise Collaborator Administration tab. The BOD Processor Administration page displays again.
+
+### Part 3: Navigate the Event Hub tool
+1. Click Administration Tools > Event Hub. The Event Hub page displays.
+2. Review the information displayed.
+3. Click the Administration tab.
+4. Review the information displayed.
+   
+### Part 4: Navigate the Event Analytics Rules tool
+1. Click Administration Tools > Event Analytics Rules. The Event Analytics Rules page displays.
+2. Review the information displayed.
+
+### Part 5: Navigate the Data Lake Publisher tool
+1. Click Administration Tools > Data Lake Publisher. The Data Lake Publisher page displays.
+2. Review the information displayed.
+3. Click the Close (X) button to close all administration tools and any open Infor M3 programs. The Infor M3 Training homepage displays.
+
