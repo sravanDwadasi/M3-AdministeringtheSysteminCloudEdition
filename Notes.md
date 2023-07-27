@@ -617,4 +617,13 @@ The About link displays version information for Infor Enterprise Collaborator.
 <img width="445" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/1743baa6-2c63-4cab-b445-d1510c99f70c">
 
 
+### Event Hub
+- The Event Hub is a generic grid extension for sending events between Infor applications.
+-  The Event Hub is a publisher-subscriber framework, that is, an application framework that allows applications to expose historical data to other applications   
+  that are interested in receiving this data.
+- The Event Hub contains two primary tabs:
+   1. **Browse Events:** This tab shows events based on subscriptions and time.
+   2. **Administration:** This tab shows the publishers, subscribers, and subscriptions.
+  
+<img width="437" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/005125ba-0aec-41f9-98f0-21bf4231c735">
 
