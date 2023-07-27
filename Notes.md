@@ -689,3 +689,9 @@ The About link displays version information for Infor Enterprise Collaborator.
 2. Review the information displayed.
 3. Click the Close (X) button to close all administration tools and any open Infor M3 programs. The Infor M3 Training homepage displays.
 
+### Infor M3CE About
+- Infor M3CE About is a non-tenant-aware tool that shows change log information for a given M3CE environment.
+-  M3CE About shows you the Infor M3 components available and the recent versions released.
+-   Each component will show multiple recent and current versions along with any important information on these versions.
+![image](https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/0204d2a1-3d91-44c7-ac8b-64d06b9f16ee)
+
