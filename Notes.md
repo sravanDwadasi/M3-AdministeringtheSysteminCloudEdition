@@ -695,3 +695,106 @@ The About link displays version information for Infor Enterprise Collaborator.
 -   Each component will show multiple recent and current versions along with any important information on these versions.
 ![image](https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/0204d2a1-3d91-44c7-ac8b-64d06b9f16ee)
 
+### Managing M3 Business Engine product version
+- Use the Feature List. Open (CMS975) program to view a detailed list of features.
+
+### Managing feature lists
+- In the Feature List. Open (CMS975) program, records are automatically created every time the system is updated.
+- Every feature (NCR) is represented by one record.
+     1. Select sorting order 01 to display all features included in a specific product version.
+     2. Select sorting order 02 to display all features regardless of product version.
+     3. Select sorting order 03 or 04 to display features based on review progress (“Under review” or “Review completed”).
+        
+### Managing the feature toggle
+- The feature toggle is managed in the Feature List. Open (CMS975) program.
+- The **Update schedule** field indicates in what system update the feature is forced to be activated.
+- Until this update the feature can be activated and deactivated as desired.
+- The **Forced activation date** field indicates the installation date of the update that forced the feature to be active.
+- After this date the feature cannot be deactivated.
+
+### Managing a feature review
+- All feature review fields are managed in the Feature List. Open (CMS975) program.
+-  The Review progress field indicates the two major steps in the review progress:
+     1. 1 - Under review
+     2. 2 - Review completed
+- The field is automatically updated based on the Feature status field where:
+     1. Status 10-49 indicates “Under review”
+     2. Status 50-90 indicates “Review completed”
+- Using the feature status, you can define several minor review steps within the two major review steps. 
+- The feature statuses are defined per customer, but status 10 – “New,” 50 – “Confirmed,” and 90 –“Completed” are system-defined and cannot be deleted.
+- The feature statuses combined with the **Responsible** field enables you to build customer-defined workflows.
+
+### Fix programs
+- Infor M3 delivers a new standard for fix programs that enables database updates with full traceability, and the capability to monitor the run’s progress.
+<img width="433" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/f3b6ef8f-06cf-4f37-9c35-702cbd9e7e20">
+
+### MCE packages
+- The MCE packages related to the new fix programs released for a correction may contain the fix program itself and an updated version of migration utility     
+  cCMMigrationMetadata.
+- The updated version of the utility contains an array element of newly added fix programs.
+- This means that after you install the MCE package and correctly configure the database update manager, the new fix program automatically appears in the list in   
+  status 05 (Ready).
+
+### Logging increments
+- The logging increment is a feature that lets you track the progress of tables that have a high importance. 
+- This feature adds the functionality to log the number of records read and the record updated/written/deleted in runtime.
+- With every increment, the program calls a utility and updates the migration table.
+- In addition, logging is used for the pause option.
+- If the program has the pause option set and the logging increment is set to a value greater than zero, then for every increment the fix program listens for a 
+  pause signal to pause its operation.
+
+### CMS950MI - API for database update manager
+- The database update manager comes with an API that has the same full functionality as the Db Update Manager(CMS950) program itself.
+
+### Reviewing the details of a feature release
+- To see the details of the feature, right-click the feature in the Feature List.
+- Open (CMS975/B1) program. 
+- Then select Related > Display in Infor Support Portal. Infor Support Portal opens in a new tab and displays the detail of the knowledge base article related to   
+  the feature.
+<img width="438" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/bc9de46d-a8da-42b6-a6f3-0212b2852413">
+
+## Exercise 6.1: Work with service maintenance tools and programs
+### Part 1: Add the M3 Product Updates widget to the homepage
+1. Click the Ellipses icon in the Infor M3 Training homepage banner (see screenshot below). A menu displays.
+2. Click the Edit Page Layout link. The widgets are now editable, and a new set of tools display in the Infor M3 Training homepage banner.
+3. Click the Add Widget link. The Widget Catalog window opens.
+4. Click the Search icon (magnifying glass). The Search field displays.
+5. Type M3 Product Updates in the Search field.
+6. Press Enter. Search results display.
+7. Click the + icon associated with the M3 Product Updates widget. A message displays indicating the widget was added.
+8. Click the Close (X) button to close the Widget Catalog. The Editing Infor M3 Training page displays again.
+9. Click the Save button. The Infor M3 Training homepage displays again with the newly added M3 Product Updates widget (depending on your screen resolution, you 
+   may need to scroll down).
+10. Click the Configure Widget button in the M3 Product Updates widget. The Configure Widget window opens.
+11. Click the Product drop-down arrow. A list displays.
+12. Click the M3 Business Engine list item.
+13. Click to select the Latest update check box.
+14. Click to select the Feature review status check box.
+15. Click to select the Current product version check box.
+16. Click the Save button. The Infor M3 Training homepage displays and the M3 Product Updates widget is populated with information.
+
+### Part 2: Review programs about features and updates
+1. Click [the first] Details link under the Feature review status heading. The Feature List. Open (CMS975) program opens. Panel B1 displays all features and  
+   feature details.
+2. Complete the following to start, review and close the Db Update Manager:<br>
+    a. Press CTRL+R. The Search and Start window opens.<br>
+    b. Type CMS950 in the Search and Start field. The Db Update Manager (CMS950) program opens. Panel B1 displays details about migrations.<br>
+    c. Review panel B1.<br>
+    d. Click the Close (X) button to close the Db Update Manager (CMS950) program.<br>
+3. Complete the following the start,and review the System Update. Open program:<br>
+    e. Press CTRL+R. The Search and Start window opens.<br>
+    f. Type CMS965 in the Search and Start field. The System Update. Open (CMS965) program opens. Panel B1 displays details relating to installations.<br>
+    g. Review panel B1.<br>
+4. Click the CMS975 Feature List. Open tab.
+5. Click to highlight [the first row in the list].
+6. Click Related > Display in Infor Support Portal. The Infor Support Portal opens in a new browser tab.
+7. Review the information displayed.
+8. Click the Close (X) button to close the Infor Support Portal tab. The Feature List. Open (CMS975/B1) program displays again.
+9. Click to highlight [the first row in the list].
+10. Click Options > Display. Panel E displays and details additional feature information.
+11. Complete the following the start and review the Product Update. Open (CMS970) program:<br>
+     h. Press CTRL+R. The Search and Start window opens.<br>
+     i. Type CMS970 in the Search and Start field. The Product Update. Open (CMS970) program opens. Panel B1 displays additional details about product updates.<br>
+     j. Review panel B1.<br>
+12. Click the Close (X) button to close all open Infor M3 programs. The Infor M3 Training homepage displays.
+
