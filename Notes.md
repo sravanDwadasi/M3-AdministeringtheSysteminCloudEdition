@@ -798,3 +798,65 @@ The About link displays version information for Infor Enterprise Collaborator.
      j. Review panel B1.<br>
 12. Click the Close (X) button to close all open Infor M3 programs. The Infor M3 Training homepage displays.
 
+## Infor M3 Metadata Publisher (MDP)
+- Infor M3 Metadata Publisher (MDP) is a data dictionary – that is, a dictionary of all files and fields that are inside the files, along with the programs they are related to.
+-  MDP makes it possible to generate metadata for a unique Infor M3 BE installation.
+-   It provides the following functionality:
+    1. Access to Infor M3 BE-related metadata
+    2. Metadata for programs, database tables, and out files including:
+       - Parameter lists
+       - Data structures
+       - Table columns
+       - Table indices
+       - Utility programs
+    3. Ability to search in any market or customer component (in an on-premise version)
+    4. Comparison of different Infor M3 BE installations
+    5. Many search, sorting, and filter options
+    6. Ability to export to Microsoft Excel
+    7. Ability to view/search BE APIs
+
+### Exercise 7.1: Navigate MDP
+
+1. Click the App menu icon. A menu displays.
+2. Click the Infor M3 menu item. Infor M3 H5 displays.
+3. Verify the menu is expanded on the left.
+4. Click Administration Tools > M3 Metadata Publisher. The M3 Metadata Publisher page displays.
+5. Click the M3 API Repository drop-down arrow. A list displays.
+6. Click the Search API list item.
+7. Type CRS610 in the Program Name filter field.
+8. Press Enter. Search results display.
+9. Click the CRS610MI link. A list of transactions options display.
+10. Click the Add link in the first row. The Add – Create a New Customer Record window opens.
+11. Click the Outbound fields tab.
+12. Review the information displayed.
+13. Click the Close (X) button to close the Add – Create a new customer record window. The M3 Metadata Publisher page displays again.
+14. Click the GetBasicData link. The GetBasicData – Retrieve Customer Basic Data window opens.
+15. Click the Outbound fields tab.
+16. Review the information displayed.
+17. Click the Close (X) button to close the GetBasicData – Retrieve customer basic data window. The M3 Metadata Publisher page displays again.
+18. Click the M3 API Repository drop-down arrow. A list displays.
+19. Click the Test API list item.
+20. Type CRS610MI in the Program field. The Select button is activated.
+21. Click the Select button. The Transaction field is activated.
+22. Click the Transaction drop-down arrow. A list displays.
+23. Click the GetBasicData list item. Additional fields display.
+24. Type 009 in the CONO Integer field.
+25. Type 10001 in the CUNO Alpha field.
+26. Click the Run button. Test API results display on the right side of the page. Note: It may take a minute to display the results.
+27. Click the M3 Function drop-down arrow. A list displays.
+28. Click the Fnc Development Client list item.
+29. Type CRS008 in the Program field. CRS008Fnc – Manage Facility displays below the Program field.
+30. Click the CRS008Fnc – Manage Facility link.
+31. Click the REST Call drop-down arrow. A list displays.
+32. Click [the first item in the list]. Search results display.
+33. Click the heading Search drop-down arrow. A list displays.
+34. Click the Search By System Configuration list item.
+35. Type MMS001 in the Keywords field. List items display below the Keywords field.
+36. Click the MMS001 MPT list item. Additional fields display.
+37. Click the Search button. Search results display on the right side of the page.
+38. Click the Source Code icon associated with [the first row]. The View Source Code window opens.
+39. Click the View link. The source code displays in a new window.
+40. Review the source code.
+41. Click the Close (X) button to close the code window.
+42. Click the Close (X) button to close the View source code window. The M3 Metadata Publisher page displays again.
+43. Click the Close (X) button to close all open programs. The Infor M3 Training homepage displays.
