@@ -804,11 +804,11 @@ The About link displays version information for Infor Enterprise Collaborator.
 -   It provides the following functionality:
     1. Access to Infor M3 BE-related metadata
     2. Metadata for programs, database tables, and out files including:
-       - Parameter lists
-       - Data structures
-       - Table columns
-       - Table indices
-       - Utility programs
+       - Parameter lists<br>
+       - Data structures<br>
+       - Table columns<br>
+       - Table indices<br>
+       - Utility programs<br>
     3. Ability to search in any market or customer component (in an on-premise version)
     4. Comparison of different Infor M3 BE installations
     5. Many search, sorting, and filter options
@@ -906,10 +906,10 @@ The About link displays version information for Infor Enterprise Collaborator.
 32. Click the F3-End list item.
 33. Click the Add button. The Business Engine Interactive Program Services page displays again.
 34. Click the Expand icon associated with Input to CRS055.
-35. Click to select the following check boxes:
-    • WQCUCD
-    • WWOPT2
-    • WWPSEQ
+35. Click to select the following check boxes:<br>
+    • WQCUCD<br>
+    • WWOPT2<br>
+    • WWPSEQ<br>
 36. Click the Add to Selected Inputs icon.
 37. Click the Constraints field associated with WQCUCD. A drop-down arrow displays in the field.
 38. Click the drop-down arrow. A list displays.
@@ -953,11 +953,11 @@ The About link displays version information for Infor Enterprise Collaborator.
 5. Click the New button. The New Audit window opens.
 6. Type MMSNPR in the Table field. MMSNPR (MVXJDTA) displays in a list below the Table field.
 7. Click the MMSNPR (MVXJDTA) list item.
-8. Click to select the following check boxes:
-   • Active
-   • Insert
-   • Update
-   • Delete
+8. Click to select the following check boxes:<br>
+   • Active<br>
+   • Insert<br>
+   • Update<br>
+   • Delete<br>
 9. Click to highlight the SNLVDT – Valid to in the Non-audited fields column of the table at the bottom of the window.
 10. Click the Select icon. SNLVDT – Valid to now displays in the Audited fields column of the table at the bottom of the window.
 11. Click the Save button.
@@ -981,19 +981,20 @@ The About link displays version information for Infor Enterprise Collaborator.
 <img width="438" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/d0326802-9558-4794-ba5a-cd89e290ce75">
 
 ### Introducing Infor M3 CE security
-- Infor M3 CE security consists of three parts:
-   • **User access to Infor M3 functionality:** It guarantees the access to Infor M3 or any other products and the access security.
-   • **General security:** It is applied over the application to control areas such as access to Infor M3 functions and individual fields. The system administrator      or the security officer maintains general security.
-   • **Application security:** It is built-in and exists as an integral part of the logic flow in some areas of the system, such as in the financial accounts and   
-     purchasing modules. Each user maintains his/her own application security.
+- Infor M3 CE security consists of three parts:<br>
+   • **User access to Infor M3 functionality:** It guarantees the access to Infor M3 or any other products and the access security.<br>
+   • **General security:** It is applied over the application to control areas such as access to Infor M3 functions and individual fields. The system 
+     administrator or the security officer maintains general security.<br>
+   • **Application security:** It is built-in and exists as an integral part of the logic flow in some areas of the system, such as in the financial accounts and 
+     purchasing modules. Each user maintains his/her own application security.<br>
 ![image](https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/bc8528ef-140d-4620-b4c3-b7bc19c8e2c0)
 
 ### Infor M3 security feature
-- Infor M3 BE provides the following methods to manage security for Infor M3 API:
-     • Authorization by transaction - Function. Connect API Authorization (SES005)
-     • Authorization by roles - Function. Connect Authorization by Role (SES400) and API Transaction. Connect Security Option (SES405)
-     • User authentication
-     • Infor M3 users are authenticated through the platform mechanism for user authentication. The user must also be registered in M3 using MNS150.
+- Infor M3 BE provides the following methods to manage security for Infor M3 API:<br>
+     • Authorization by transaction - Function. Connect API Authorization (SES005)<br>
+     • Authorization by roles - Function. Connect Authorization by Role (SES400) and API Transaction. Connect Security Option (SES405)<br>
+     • User authentication<br>
+     • Infor M3 users are authenticated through the platform mechanism for user authentication. The user must also be registered in M3 using MNS150.<br>
 
 ### System Settings. Open (MNS090)
 - The API security for authorization by transaction is activated by selecting option **1 – Security via authorization** in the **API security** field.
@@ -1006,15 +1007,15 @@ The About link displays version information for Infor Enterprise Collaborator.
   and denied for all users.
 
 ### Infor Federation Services (IFS)
-- IFS provides the following capabilities:
-   • Single sign-on / single sign-out
-   • Multi-factor authentication
-   • User management
-   • User inactivity timeout (in association with Infor OS)
-   • User provisioning and user synchronization
-   • Synchronization of security roles
-   • User-to-role mapping
-   • Synchronization of users across different security domains
+- IFS provides the following capabilities:<br>
+   • Single sign-on / single sign-out<br>
+   • Multi-factor authentication<br>
+   • User management<br>
+   • User inactivity timeout (in association with Infor OS)<br>
+   • User provisioning and user synchronization<br>
+   • Synchronization of security roles<br>
+   • User-to-role mapping<br>
+   • Synchronization of users across different security domains<br>
 
 ### Adding IFS security roles
 - If any of the required IFS security roles are missing, you must add these roles manually through the User Management menu in Infor Ming.le.
