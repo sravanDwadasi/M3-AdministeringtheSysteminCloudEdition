@@ -860,3 +860,124 @@ The About link displays version information for Infor Enterprise Collaborator.
 41. Click the Close (X) button to close the code window.
 42. Click the Close (X) button to close the View source code window. The M3 Metadata Publisher page displays again.
 43. Click the Close (X) button to close all open programs. The Infor M3 Training homepage displays.
+
+## Infor M3 BE Interactive Program Services (IPS)
+- It is a tool built in M3 BE that enables you to automate the execution of interactive M3 BE programs.
+- To execute a program or a series of programs automatically, you can create a service that contains all the required metadata through the IPS Designer.
+- IPS replaces M3 Web Services M3 Program Definition (MPD). IPS also supports legacy web services, that is, in the form of MDPs from the M3 Web Service tool, through REST API.
+
+### Introducing IPS Designer
+- Use the IPS Designer to create, update, and test web services and all sub-components that belong to a web service.
+- Before creating a web service, you should first determine the M3 BE functionality that should be exposed as a web service.
+![image](https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/8df78557-56a8-474d-b901-e3099477b9b7)
+
+### Demo 7.2: Work with IPS
+1. Click the App menu icon. A menu displays.
+2. Click the Infor M3 menu item. Infor M3 H5 displays.
+3. Verify the menu is expanded on the left.
+4. Click Administration Tools > Business Engine Interactive Program Services. The Business Engine Interactive Program Services page displays.
+5. Click the New drop-down arrow. A list displays.
+6. Click the New Service list item. The New Service window opens.
+7. Type TestA[your assigned 900Tnn user ID] in the Name field.
+8. Click the System Configuration drop-down arrow. A list displays.
+9. Click the MVX list item.
+10. Click the Create button. The Business Engine Interactive Program Services page displays again.
+11. Click the New drop-down arrow. A list displays.
+12. Click the New Method list item.
+13. Type TestA[your assigned 900Tnn user ID] in the Name field.
+14. Click the Create button. The Business Engine Interactive Program Services page displays again.
+15. Click the Add button. The Add Program window opens.
+16. Click the Program drop-down arrow. A list and search field display.
+17. Type CRS055 in the Search field. CRS055 displays at the top of the list.
+18. Click the CRS055 list item.
+19. Click the Add button. The message, “The program CRS055 has a corresponding MI program. Please use that instead of creating a service if possible. Do you still want to add this program?” displays.
+20. Click the Add button. The Business Engine Interactive Program Services page displays again with the service method test method for CRS055.
+21. Click the Expand icon associated with Panel Sequence for CRS055.
+22. Click the Add button. The Add Panel window opens.
+23. Click the Panel drop-down arrow. A list displays.
+24. Click the A list item.
+25. Click the Function Key drop-down arrow. A list displays.
+26. Click the ENTER-ENTER list item.
+27. Click the Add button. The Business Engine Interactive Program Services page displays again.
+28. Click the Add button. The Add Panel window opens.
+29. Click the Panel drop-down arrow. A list displays.
+30. Click the E list item.
+31. Click the Function Key drop-down arrow. A list displays.
+32. Click the F3-End list item.
+33. Click the Add button. The Business Engine Interactive Program Services page displays again.
+34. Click the Expand icon associated with Input to CRS055.
+35. Click to select the following check boxes:
+    • WQCUCD
+    • WWOPT2
+    • WWPSEQ
+36. Click the Add to Selected Inputs icon.
+37. Click the Constraints field associated with WQCUCD. A drop-down arrow displays in the field.
+38. Click the drop-down arrow. A list displays.
+39. Click the Mandatory list item.
+40. Click the Constraints field associated with WWOPT2. A drop-down arrow displays.
+41. Click the Constant list item.
+42. Click the Constraints field associated with WWPSEQ. A drop-down arrow displays.
+43. Click the Constant list item.
+44. Type 5 in the Default Value field associated with WWOPT2.
+45. Type E in the Default Value field associated with WWPSEQ.
+46. Click the Expand icon associated with Output from CRS055.
+47. Click to select the WTTX40 check box.
+48. Click the Add to Selected Outputs icon.
+49. Click the File drop-down arrow (at the top of the Business Engine Interactive Program Services page). A list displays.
+50. Click the Save list item. A Changes window opens.
+51. Type Changes to [your assigned 900Tnn user ID]-Test1 in the Description field.
+52. Click the Save button. The message, “Service test successfully saved” displays.
+53. Click the OK button.
+54. Click the New drop-down arrow. A list displays.
+55. Click the New Test Case list item. The New Test Case window opens.
+56. Type [your assigned 900Tnn user ID]TestCaseTest1 in the Name field.
+57. Type [your assigned 009Tnn user ID] first test case in the Description field.
+58. Click the Create button.
+59. Click the Company/Division drop-down arrow. A list displays.
+60. Click the 9/ BBB list item.
+61. Type USD in the Currency (WQCUCD) – string field.
+62. Click the Execute Service button. Test results display in the Test Result field.
+63. Review the test result information.
+64. Click the Close (X) button to close all open Infor M3 programs. The Infor M3 Training homepage displays.
+
+### Business Engine Field Audit Trail
+- The Business Engine Field Audit Trail is used to set up audits of data changes made to specific BE database fields.
+- It enables you to keep track of when the changes were made, what the previous value was prior to the change, and which user made the change.
+<img width="423" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/a0271844-d0dc-4ba5-9290-d81d778b3720">
+
+### Exercise 7.3: Navigate the Business Engine Field Audit Trail tool
+1. Click the App menu icon. A menu displays.
+2. Click the Infor M3 menu item. The Infor M3 H5 thin client displays.
+3. Verify the menu is expanded on the left.
+4. Click Administration Tools > Business Engine Field Audit Trail. The Business Engine Field Audit Trail page displays.
+5. Click the New button. The New Audit window opens.
+6. Type MMSNPR in the Table field. MMSNPR (MVXJDTA) displays in a list below the Table field.
+7. Click the MMSNPR (MVXJDTA) list item.
+8. Click to select the following check boxes:
+   • Active
+   • Insert
+   • Update
+   • Delete
+9. Click to highlight the SNLVDT – Valid to in the Non-audited fields column of the table at the bottom of the window.
+10. Click the Select icon. SNLVDT – Valid to now displays in the Audited fields column of the table at the bottom of the window.
+11. Click the Save button.
+12. Click to highlight the MMSNPR current audit row. The Edit and Delete buttons activate.
+13. Click the Show More link under the History (changes to Audit settings) heading. Additional details about the table, fields, keys, and data display.
+14. Review the information displayed.
+15. Click the Show Less link.
+16. Click the Close (X) button to close all open Infor M3 programs. The Infor M3 Training homepage displays.
+
+### Infor M3 function search
+- Infor M3 function search is a generic search tool using Infor Enterprise Search (IES) that supports searching any field for any value in the Infor M3 database.
+- IES is a deeply integrated, intuitive search application for Infor M3 and non-Infor M3 data to help organizations search and find relevant information securely and quickly.
+<img width="437" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/70a36aef-db32-467a-aa63-72bb522a2e56">
+
+### Defining system settings
+- You can define system settings in the System Settings. Open (MNS090) program.
+<img width="435" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/9da8eafe-efd6-4178-8b77-310d92e9ef49">
+
+### Infor M3 function search administration tasks
+- Use the M3 Function Search Administration page to manually activate or deactivate applicable tables.
+<img width="438" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/d0326802-9558-4794-ba5a-cd89e290ce75">
+
+### Introducing Infor M3 CE security
