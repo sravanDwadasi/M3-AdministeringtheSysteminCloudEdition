@@ -1033,3 +1033,8 @@ The About link displays version information for Infor Enterprise Collaborator.
 7. Click the Add & Close button. The Security Roles tab displays again with the newly added roles.
 8. Click the Save Item button.
 9. Click the Close (X) button to close all open Infor M3 programs. The Infor M3 Training homepage displays.
+
+# Glossary and definition of acronyms/abbreviations
+<img width="320" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/912793f9-ea15-4eda-b61e-2c840cb433d6">
+
+<img width="329" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/463ed953-20d8-4640-8d6a-d15fd2e56bf1">
