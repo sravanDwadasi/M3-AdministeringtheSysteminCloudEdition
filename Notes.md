@@ -981,3 +981,54 @@ The About link displays version information for Infor Enterprise Collaborator.
 <img width="438" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/d0326802-9558-4794-ba5a-cd89e290ce75">
 
 ### Introducing Infor M3 CE security
+- Infor M3 CE security consists of three parts:
+   • **User access to Infor M3 functionality:** It guarantees the access to Infor M3 or any other products and the access security.
+   • **General security:** It is applied over the application to control areas such as access to Infor M3 functions and individual fields. The system administrator      or the security officer maintains general security.
+   • **Application security:** It is built-in and exists as an integral part of the logic flow in some areas of the system, such as in the financial accounts and   
+     purchasing modules. Each user maintains his/her own application security.
+![image](https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/bc8528ef-140d-4620-b4c3-b7bc19c8e2c0)
+
+### Infor M3 security feature
+- Infor M3 BE provides the following methods to manage security for Infor M3 API:
+     • Authorization by transaction - Function. Connect API Authorization (SES005)
+     • Authorization by roles - Function. Connect Authorization by Role (SES400) and API Transaction. Connect Security Option (SES405)
+     • User authentication
+     • Infor M3 users are authenticated through the platform mechanism for user authentication. The user must also be registered in M3 using MNS150.
+
+### System Settings. Open (MNS090)
+- The API security for authorization by transaction is activated by selecting option **1 – Security via authorization** in the **API security** field.
+- When you select alternative 1, users that are authorized to use API transactions must be added in the **Function. Connect API Authorization (SES005)** program.
+- If no entries for the user exist in the **Function. Connect API Authorization (SES005)** program the APItransaction is denied.
+- The security through authorization by roles for API is activated by selecting option **2 – Security via roles** in the **API security** field.
+- **Note:** Before this alternative can be selected, every API transaction and default security option must be generated in the **API Transaction. Connect 
+  Security Option (SES405)** program.
+- A transaction that does not exist or with a blank security option in the **API Transaction. Connect Security Option (SES405)** program is considered restricted 
+  and denied for all users.
+
+### Infor Federation Services (IFS)
+- IFS provides the following capabilities:
+   • Single sign-on / single sign-out
+   • Multi-factor authentication
+   • User management
+   • User inactivity timeout (in association with Infor OS)
+   • User provisioning and user synchronization
+   • Synchronization of security roles
+   • User-to-role mapping
+   • Synchronization of users across different security domains
+
+### Adding IFS security roles
+- If any of the required IFS security roles are missing, you must add these roles manually through the User Management menu in Infor Ming.le.
+<img width="433" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/90679752-106a-4776-9b4c-98c20ff90c1c">
+
+## Exercise 8.1: Add the IDM security role to a user in IFS
+1. Click the User Menu icon. A menu displays.
+2. Click the User Management menu item. The Users panel of Infor Federation Services (IFS) tool opens.
+3. Click the User Details button associated with [your name]. The [your name] user panel opens.
+4. Click the Security Roles tab.
+5. Click the Add New Item icon (screenshot below). The Select Security Roles window opens.
+  <img width="131" alt="image" src="https://github.com/sravanDwadasi/M3-AdministeringtheSysteminCloudEdition/assets/53566313/318fc2e0-4721-4924-abb2-26a6c618c9f5">
+
+6. Click to select the check box associated with IDM-User.
+7. Click the Add & Close button. The Security Roles tab displays again with the newly added roles.
+8. Click the Save Item button.
+9. Click the Close (X) button to close all open Infor M3 programs. The Infor M3 Training homepage displays.
